@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Story for Manisha — 31.10.2026</title>
+  <meta name="description" content="A cinematic Attack on Titan-inspired love story for Manisha, from Jashwanth Reddy.">
+
+  <!-- Google Fonts: Cinzel, Cormorant Garamond, Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Subtle Film Grain Overlay -->
+  <div class="film-grain-overlay" aria-hidden="true"></div>
+
+  <!-- Ambient Ash & Crimson Ember Particle Canvas -->
+  <canvas id="ambientCanvas" aria-hidden="true"></canvas>
+
+  <!-- Minimal Audio Control Button -->
+  <button id="btnMinimalAudio" class="minimal-audio-btn" aria-label="Toggle Soundtrack" title="Toggle Soundtrack">
+    <div class="audio-bars">
+      <span></span><span></span><span></span>
+    </div>
+    <span class="audio-status-text" id="audioStatusText">SOUND</span>
+  </button>
+
+  <!-- MAIN CINEMATIC FLOW CONTAINER -->
+  <div class="cinematic-viewport" id="cinematicViewport">
+
+    <!-- ====================================================================
+         SCENE 1 — THE MISSION
+         ==================================================================== -->
+    <section id="scene-mission" class="cinema-scene scene-mission active">
+      <div class="scene-inner">
+        <div class="mission-typewriter-box">
+          <p class="type-line line-1">A SPECIAL MISSION HAS BEEN ASSIGNED.</p>
+          <p class="type-line line-2">SUBJECT: <span class="highlight-gold">MANISHA</span></p>
+          <p class="type-line line-3">MISSION DATE: 31.10.2026</p>
+          <p class="type-line line-4"><span id="missionDaysRemaining" class="highlight-red">30</span> DAYS REMAIN.</p>
+        </div>
+
+        <div class="mission-action-row">
+          <button id="btnBeginExperience" class="btn-aot-begin">
+            <span class="btn-bracket">[</span>
+            <span class="btn-label">BEGIN</span>
+            <span class="btn-bracket">]</span>
+            <span class="btn-scarf-glow"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SCENE 2 — THE WALL
+         ==================================================================== -->
+    <section id="scene-wall" class="cinema-scene scene-wall">
+      <!-- Layered Wall Environment -->
+      <div class="wall-visual-backdrop" aria-hidden="true">
+        <div class="wall-sky"></div>
+        <div class="wall-mist-far"></div>
+        
+        <!-- Migrating birds -->
+        <div class="wall-birds-flock">
+          <span class="bird b-1"></span>
+          <span class="bird b-2"></span>
+          <span class="bird b-3"></span>
+          <span class="bird b-4"></span>
+        </div>
+
+        <!-- The 50-meter Stone Wall -->
+        <div class="colossal-stone-wall">
+          <div class="crenellation-row"></div>
+          <div class="wall-masonry-shadow"></div>
+        </div>
+
+        <div class="wall-mist-near"></div>
+      </div>
+
+      <div class="scene-inner wall-camera-target">
+        <div class="wall-narrative-card">
+          <p class="cinematic-line wall-line-1">BEYOND EVERY WALL...</p>
+          <p class="cinematic-line wall-line-2">THERE IS ALWAYS A STORY.</p>
+          <div class="wall-scarf-accent"></div>
+          <h2 class="cinematic-title wall-line-3">THIS ONE IS OURS.</h2>
+        </div>
+
+        <div class="scene-progress-hint">
+          <span class="scroll-arrow">↓</span>
+          <span class="scroll-label">FOLLOW THE THREAD</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SCENE 3 — THE THREAD (No photos, single glowing red thread with 4 points)
+         ==================================================================== -->
+    <section id="scene-thread" class="cinema-scene scene-thread">
+      
+      <!-- Glowing Red Thread Canvas & SVG Path -->
+      <div class="thread-canvas-container" aria-hidden="true">
+        <svg class="glowing-thread-svg" viewBox="0 0 1000 2400" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="threadGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" stop-color="#450a0a" stop-opacity="0.3"/>
+              <stop offset="25%" stop-color="#8B1E2D" stop-opacity="0.8"/>
+              <stop offset="55%" stop-color="#A71930" stop-opacity="1"/>
+              <stop offset="85%" stop-color="#dc2626" stop-opacity="1"/>
+              <stop offset="100%" stop-color="#f87171" stop-opacity="0.95"/>
+            </linearGradient>
+            <filter id="threadGlowFilter" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="7" result="glow"/>
+              <feMerge>
+                <feMergeNode in="glow"/>
+                <feMergeNode in="glow"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <path id="svgThreadPath" class="svg-thread-path"
+                d="M 500 2400 
+                   C 410 2050, 590 1800, 490 1550 
+                   C 390 1300, 610 1050, 510 800 
+                   C 420 550, 580 300, 500 0" 
+                fill="none" stroke="url(#threadGrad)" stroke-width="3.5" filter="url(#threadGlowFilter)"/>
+        </svg>
+      </div>
+
+      <div class="scene-inner thread-narrative-flow">
+        
+        <!-- POINT 01 -->
+        <div class="thread-memory-point" data-point="1">
+          <div class="point-beacon">
+            <span class="beacon-core"></span>
+            <span class="beacon-pulse"></span>
+          </div>
+          <div class="point-content">
+            <span class="point-number">POINT 01</span>
+            <h3 class="point-title">THE DAY IT STARTED</h3>
+            <p class="point-lead">“The beginning of something I didn't know would become so important.”</p>
+          </div>
+        </div>
+
+        <!-- POINT 02 -->
+        <div class="thread-memory-point" data-point="2">
+          <div class="point-beacon">
+            <span class="beacon-core"></span>
+            <span class="beacon-pulse"></span>
+          </div>
+          <div class="point-content">
+            <span class="point-number">POINT 02</span>
+            <h3 class="point-title">THE MOMENT YOU MADE ME SMILE</h3>
+            <p class="point-lead">“Some moments are small...”</p>
+            <p class="point-sub italic highlight-cream">“...until you realize they changed everything.”</p>
+          </div>
+        </div>
+
+        <!-- POINT 03 -->
+        <div class="thread-memory-point" data-point="3">
+          <div class="point-beacon">
+            <span class="beacon-core"></span>
+            <span class="beacon-pulse"></span>
+          </div>
+          <div class="point-content">
+            <span class="point-number">POINT 03</span>
+            <h3 class="point-title">A MEMORY I NEVER WANT TO LOSE</h3>
+            <p class="point-lead">“Every quiet second with you is a memory I protect with all my heart.”</p>
+          </div>
+        </div>
+
+        <!-- POINT 04 -->
+        <div class="thread-memory-point" data-point="4">
+          <div class="point-beacon">
+            <span class="beacon-core"></span>
+            <span class="beacon-pulse"></span>
+          </div>
+          <div class="point-content">
+            <span class="point-number">POINT 04</span>
+            <h3 class="point-title">THE FUTURE WE HAVEN'T LIVED YET</h3>
+            <p class="point-lead">“Beyond every wall, in every tomorrow, it’s you I want beside me.”</p>
+          </div>
+        </div>
+
+        <!-- Thread to Scarf Transformation Bridge -->
+        <div class="thread-scarf-bridge">
+          <div class="thread-forming-knot"></div>
+          <p class="thread-bridge-text">And the thread became a promise...</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SCENE 4 — MIKASA & THE RED SCARF (100% SVG/CSS Abstract Landscape)
+         ==================================================================== -->
+    <section id="scene-mikasa" class="cinema-scene scene-mikasa">
+      
+      <!-- Abstract Dark Landscape (100% SVG/CSS — Zero Image Assets Required) -->
+      <div class="abstract-landscape" aria-hidden="true">
+        <!-- Moody sky with soft moonlight -->
+        <div class="landscape-sky"></div>
+        <div class="landscape-moon"></div>
+        
+        <!-- Distant Wall & Mountain Silhouettes -->
+        <svg class="landscape-mountains-svg" viewBox="0 0 1440 400" preserveAspectRatio="none">
+          <path d="M0 400 L0 260 Q 300 190 600 230 T 1200 180 T 1440 210 L 1440 400 Z" fill="#0d1410" opacity="0.85"/>
+          <path d="M0 400 L0 310 Q 400 260 800 280 T 1440 250 L 1440 400 Z" fill="#131b16"/>
+        </svg>
+
+        <!-- Lone Anime Figure Silhouette (Pure Vector Geometry) -->
+        <div class="lone-silhouette-container">
+          <svg class="lone-silhouette-svg" viewBox="0 0 120 220" width="80" height="150" fill="#08090a">
+            <path d="M 60 25 C 55 25 48 32 48 42 C 48 50 54 58 60 58 C 66 58 72 50 72 42 C 72 32 65 25 60 25 Z"/>
+            <path d="M 52 58 L 44 80 L 35 125 L 42 165 L 48 215 L 56 215 L 56 160 L 64 160 L 64 215 L 72 215 L 78 165 L 85 125 L 76 80 L 68 58 Z" fill="#090c0a"/>
+            <path class="figure-cloak" d="M 44 75 Q 25 110 18 150 Q 35 140 45 130 Z" fill="#0d1410"/>
+          </svg>
+          <div class="silhouette-ground-parapet"></div>
+        </div>
+
+        <!-- Atmospheric Rolling Fog -->
+        <div class="landscape-fog-layer"></div>
+
+        <!-- THE RED SCARF (Pure SVG Fabric Silk) -->
+        <div class="central-scarf-container" id="centralScarfContainer">
+          <svg class="epic-scarf-svg" viewBox="0 0 1200 600" width="100%" height="auto">
+            <defs>
+              <linearGradient id="scarfFabric" x1="0%" y1="0%" x2="100%" y2="80%">
+                <stop offset="0%" stop-color="#ef4444"/>
+                <stop offset="30%" stop-color="#A71930"/>
+                <stop offset="70%" stop-color="#8B1E2D"/>
+                <stop offset="100%" stop-color="#450a0a"/>
+              </linearGradient>
+              <linearGradient id="scarfSheen" x1="0%" y1="0%" x2="100%" y2="30%">
+                <stop offset="0%" stop-color="#fca5a5" stop-opacity="0.8"/>
+                <stop offset="45%" stop-color="#ef4444" stop-opacity="0.25"/>
+                <stop offset="100%" stop-color="#7f1d1d" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="goldFilament" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#B49A62"/>
+                <stop offset="50%" stop-color="#EEE7D5"/>
+                <stop offset="100%" stop-color="#B49A62"/>
+              </linearGradient>
+              <filter id="scarfSoftGlow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="8" result="blur"/>
+                <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+              </filter>
+            </defs>
+            <path class="scarf-layer-back"
+                  d="M 80 340 
+                     C 220 180, 420 420, 620 250 
+                     C 820 80, 980 280, 1140 180 
+                     C 1060 280, 920 380, 740 340 
+                     C 560 300, 380 480, 180 410 
+                     C 120 390, 90 410, 60 370 Z" 
+                  fill="url(#scarfFabric)" filter="url(#scarfSoftGlow)"/>
+            <path class="scarf-layer-sheen"
+                  d="M 100 330 
+                     C 240 190, 430 380, 610 260 
+                     C 790 140, 960 250, 1120 190 
+                     C 1020 260, 880 330, 720 310 
+                     C 540 280, 360 430, 190 380 Z" 
+                  fill="url(#scarfSheen)"/>
+            <path class="scarf-gold-thread"
+                  d="M 75 345 
+                     C 225 185, 425 410, 615 255 
+                     C 815 95, 975 275, 1135 185" 
+                  fill="none" stroke="url(#goldFilament)" stroke-width="2.5" stroke-dasharray="8,6" opacity="0.85"/>
+            <g stroke="#8B1E2D" stroke-width="2.5" stroke-linecap="round" opacity="0.9">
+              <line x1="60" y1="370" x2="35" y2="405"/>
+              <line x1="68" y1="372" x2="48" y2="410"/>
+              <line x1="76" y1="374" x2="60" y2="412"/>
+              <line x1="84" y1="375" x2="72" y2="410"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="scene-inner mikasa-narrative-flow">
+        
+        <!-- Paced Text Lines -->
+        <div class="mikasa-line-block">
+          <h2 class="anime-chapter-title">MIKASA</h2>
+          <p class="cine-quote-line">“Some people become special...”</p>
+          <p class="cine-quote-line">“Not because they are the strongest.”</p>
+          <p class="cine-quote-line highlight-cream">“But because they never stop caring.”</p>
+        </div>
+
+        <div class="mikasa-line-block dimmed-segment">
+          <p class="cine-quote-line">“Maybe that's why you love her.”</p>
+          <p class="cine-quote-line italic">“And maybe... that's why I think of you.”</p>
+        </div>
+
+        <div class="mikasa-line-block">
+          <h2 class="anime-chapter-title highlight-gold">MANISHA</h2>
+          <p class="cine-char-qualities">Strong. Beautiful. Unforgettable.</p>
+          <p class="cine-char-favorite">My favorite person.</p>
+        </div>
+
+        <!-- The Red Scarf Moment (Screen darkens to pitch black, only scarf remains) -->
+        <div class="scarf-pitch-black-moment" id="scarfMomentBlock">
+          <p class="scarf-moment-line">“A scarf can hold a memory.”</p>
+          <p class="scarf-moment-line">“It can hold a promise.”</p>
+          <p class="scarf-moment-line">“It can remind you of someone.”</p>
+          <div class="scarf-line-accent"></div>
+          <p class="scarf-moment-line">“And this one...”</p>
+          <p class="scarf-moment-line highlight-cream">“...reminds me of you.”</p>
+        </div>
+
+      </div>
+
+      <!-- Scarf Zoom & Transition to Countdown -->
+      <div class="scarf-zoom-curtain" id="scarfZoomCurtain">
+        <div class="countdown-origin-dot" id="countdownOriginDot"></div>
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         SCENE 5 — THE COUNTDOWN
+         ==================================================================== -->
+    <section id="scene-countdown" class="cinema-scene scene-countdown">
+      <div class="scene-inner">
+        <header class="countdown-header">
+          <h2 class="scene-title-large">THE COUNTDOWN</h2>
+          <p class="scene-subtitle-tag">UNTIL MANISHA'S BIRTHDAY</p>
+        </header>
+
+        <!-- Huge Elegant Countdown Display -->
+        <div class="monumental-countdown">
+          
+          <div class="chrono-unit">
+            <div class="chrono-digits" id="cntDays">30</div>
+            <div class="chrono-label">DAYS</div>
+          </div>
+
+          <span class="chrono-divider">:</span>
+
+          <div class="chrono-unit">
+            <div class="chrono-digits" id="cntHours">00</div>
+            <div class="chrono-label">HOURS</div>
+          </div>
+
+          <span class="chrono-divider">:</span>
+
+          <div class="chrono-unit">
+            <div class="chrono-digits" id="cntMinutes">00</div>
+            <div class="chrono-label">MINUTES</div>
+          </div>
+
+          <span class="chrono-divider">:</span>
+
+          <div class="chrono-unit">
+            <div class="chrono-digits highlight-red" id="cntSeconds">00</div>
+            <div class="chrono-label">SECONDS</div>
+          </div>
+
+        </div>
+
+        <!-- 30-Day Minimal Journey Progress Bar -->
+        <div class="journey-progress-container">
+          <div class="journey-progress-track">
+            <div class="journey-progress-fill" id="journeyProgressFill">
+              <span class="journey-spark"></span>
+            </div>
+          </div>
+          <div class="journey-meta-row">
+            <span>01.10.2026</span>
+            <span id="journeyPercentText">OPERATION ACTIVE</span>
+            <span>31.10.2026</span>
+          </div>
+        </div>
+
+        <!-- Personal Narrative -->
+        <div class="countdown-personal-words">
+          <p class="cine-whisper">“30 days isn't that long...”</p>
+          <p class="cine-whisper italic">“...but I couldn't wait until then to tell you...”</p>
+          <p class="cine-whisper highlight-gold">“You're incredibly special to me.”</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SCENE 6 — FINAL MISSION & ZERO-HOUR BIRTHDAY REVEAL
+         ==================================================================== -->
+    <section id="scene-final" class="cinema-scene scene-final">
+      
+      <!-- DEFAULT STATE: THE LOCKED CINEMATIC DOOR -->
+      <div id="doorStateLocked" class="final-door-stage">
+        <div class="scene-inner">
+          <div class="door-structure">
+            <div class="door-frame">
+              <div class="door-panel left-panel"></div>
+              <div class="door-seam"></div>
+              <div class="door-panel right-panel"></div>
+              
+              <!-- Scout Crest Lock Seal -->
+              <div class="door-crest-lock" id="doorLockCrest" title="Classified Seal: Unlocks on 31.10.2026">
+                <svg viewBox="0 0 100 100" width="70" height="70" fill="none">
+                  <circle cx="50" cy="50" r="45" stroke="var(--c-gold)" stroke-width="2"/>
+                  <circle cx="50" cy="50" r="41" stroke="var(--c-scarf-red)" stroke-width="1.5" stroke-dasharray="4,4"/>
+                  <path d="M50 20 L75 32 V55 C75 75 50 86 50 86 C50 86 25 75 25 55 V32 L50 20 Z" fill="#121815" stroke="var(--c-gold)" stroke-width="1.5"/>
+                  <path d="M50 35 L62 42 V52 C62 62 50 68 50 68 C50 68 38 62 38 52 V42 L50 35 Z" fill="var(--c-scarf-red)"/>
+                </svg>
+                <div class="lock-glow-ring"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="door-status-block">
+            <span class="door-directive-tag">RESTRICTED ACCESS</span>
+            <h2 class="door-title">FINAL MISSION</h2>
+            <p class="door-date">ACCESS DATE: 31.10.2026</p>
+            <p class="door-instruction">“Come back when the clock reaches zero.”</p>
+            
+            <!-- Discreet Trigger for Jashwanth to preview transformation -->
+            <button id="btnSecretUnlock" class="btn-secret-override" title="Preview Zero Hour Transformation">
+              [ OVERRIDE PROTOCOL ]
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRANSFORMED STATE: OCTOBER 31 REVEAL -->
+      <div id="birthdayRevealStage" class="birthday-reveal-stage hidden" aria-hidden="true">
+        
+        <!-- Heavenly Cinematic Sky & Golden Light -->
+        <div class="bday-ambient-sky" aria-hidden="true">
+          <div class="bday-light-shaft"></div>
+          <div class="bday-stars-field"></div>
+          <div class="bday-scarf-sweep" id="bdayScarfSweep"></div>
+        </div>
+
+        <div class="scene-inner bday-content-wrapper">
+          <h1 class="bday-greeting-lead">ADVANCE HAPPY BIRTHDAY, BANGARAM ❤️</h1>
+          <h2 class="bday-hero-name">MANISHA</h2>
+          <div class="bday-badge-date">31.10.2026</div>
+
+          <div class="bday-author-seal">
+            <p class="bday-sign">From Jashwanth Reddy</p>
+            <p class="bday-whisper-final">“I couldn't wait until your birthday to tell you how special you are.”</p>
+            <div class="bday-ribbon-line"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- Audio Element (Native HTML5 with graceful Web Audio atmospheric wind synthesis) -->
+  <audio id="soundtrackAudio" preload="auto" loop>
+    <source src="assets/audio/background.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Flash Transition Veil -->
+  <div id="cinemaFlashVeil" class="cinema-flash-veil" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
